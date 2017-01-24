@@ -28,7 +28,7 @@ var watch = module.exports = function( aSrc, fnCallback ){ // jshint ignore:line
 
     }// /switch()
 
-    resolve( aSrc )
+    resolve( aSrc, true )
     .then(function( aResolved ){
         var i, l = aResolved.length;
         var aPromises = [];
